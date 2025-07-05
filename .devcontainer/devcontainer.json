@@ -1,0 +1,54 @@
+{
+  "name": "BarberDemo - .NET 8",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "8.0"
+    }
+  },
+
+  // Configure tool-specific properties
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true
+      },
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "humao.rest-client",
+        "ms-vscode.vscode-json"
+      ]
+    }
+  },
+
+  // Forward ports for the web application
+  "forwardPorts": [5000, 5001],
+  "portsAttributes": {
+    "5000": {
+      "label": "BarberDemo HTTP",
+      "onAutoForward": "openBrowser"
+    },
+    "5001": {
+      "label": "BarberDemo HTTPS",
+      "protocol": "https"
+    }
+  },
+
+  // Run commands after the container is created
+  "postCreateCommand": "dotnet restore && echo 'BarberDemo is ready! Run: dotnet run'",
+
+  // Comment out to connect as root instead
+  "remoteUser": "vscode",
+
+  // Use 'forwardPorts' to make ports available locally
+  "appPort": [5000, 5001],
+
+  // Environment variables
+  "containerEnv": {
+    "ASPNETCORE_URLS": "http://+:5000;https://+:5001",
+    "ASPNETCORE_ENVIRONMENT": "Development"
+  }
+}
