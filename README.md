@@ -4,6 +4,14 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
+## 🌐 Language / Dil Seçimi
+
+**🇹🇷 [Türkçe](#türkçe-dokümantasyon) | 🇺🇸 [English](#english-documentation)**
+
+---
+
+## 🇹🇷 Türkçe Dokümantasyon
+
 Modern, responsive ve kullanıcı dostu berber randevu sistemi. ASP.NET Core 8 ile geliştirilmiş, Calendly entegrasyonu ile güçlendirilmiş profesyonel web uygulaması.
 
 ## ✨ Özellikler
@@ -133,3 +141,137 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 ---
 
 ⭐ **Beğendiyseniz yıldız vermeyi unutmayın!**
+
+---
+
+## 🇺🇸 English Documentation
+
+Modern, responsive and user-friendly barber appointment system. Professional web application developed with ASP.NET Core 8 and enhanced with Calendly integration.
+
+## ✨ Features
+
+### 🎯 **Appointment Systems**
+- **Calendly Integration**: Professional appointment management
+- **Quick Appointment Form**: Instant appointment booking
+- **Dual Options**: Both Calendly and custom form
+- **Responsive Design**: Perfect view on all devices
+
+### 🏪 **Barber Features**
+- **Service Packages**: Haircut, beard trimming, hair care
+- **Working Hours**: Automatic time control
+- **Price List**: Transparent pricing
+- **Contact Information**: Easy access
+
+### 🔧 **Technical Features**
+- **ASP.NET Core 8**: Modern web framework
+- **Entity Framework Core**: In-memory database
+- **Bootstrap 5**: Responsive UI framework
+- **Font Awesome**: Icon library
+- **Calendly API**: Professional appointment system
+
+## 🚀 Live Demo
+
+- **Demo Site**: [Access here](https://your-railway-app.up.railway.app)
+- **Calendly**: [Book appointment](https://calendly.com/isgelistirme41/30min)
+- **API Docs**: [Swagger UI](https://your-railway-app.up.railway.app/swagger)
+
+## 📦 Quick Start
+
+### Requirements
+- .NET 8.0 SDK
+- Git
+
+### Installation
+```bash
+git clone https://github.com/CemRoot/BarberDemo.git
+cd BarberDemo
+dotnet restore
+dotnet run
+```
+
+Visit `http://localhost:5000` in your browser.
+
+## 🌐 Deployment Options
+
+### 1. Railway (Recommended)
+1. Create account at [Railway.app](https://railway.app)
+2. Connect your GitHub repo
+3. Automatic deployment starts
+
+### 2. Render
+1. Create account at [Render.com](https://render.com)
+2. Connect your GitHub repo
+3. Deploy as web service
+
+### 3. Azure
+1. Create Azure App Service
+2. Deploy with GitHub Actions
+
+## 📁 Project Structure
+
+```
+BarberDemo/
+├── wwwroot/                 # Static files
+│   ├── css/style.css       # Custom CSS
+│   ├── js/app.js           # JavaScript
+│   └── index.html          # Main page
+├── Program.cs              # Main application
+├── appsettings.json        # Configuration
+├── Dockerfile              # Docker build
+├── railway.json            # Railway config
+└── README.md              # This file
+```
+
+## 🛠️ Development
+
+### API Endpoints
+- `GET /` - Home page
+- `GET /api/status` - System status
+- `POST /api/appointments` - Create appointment
+- `POST /api/hours` - Working hours
+- `GET /swagger` - API documentation
+
+### Contributing
+1. Fork the repository
+2. Create feature branch
+3. Commit changes
+4. Submit pull request
+
+## 🎨 Customization
+
+### Color Theme
+Update CSS variables in `wwwroot/css/style.css`:
+```css
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+}
+```
+
+### Calendly Link
+Update URL in `wwwroot/js/app.js`:
+```javascript
+url: 'https://calendly.com/YOUR-LINK/30min'
+```
+
+## 📞 Contact
+
+- **Developer**: [GitHub Profile](https://github.com/CemRoot)
+- **Demo**: [Live Site](https://your-railway-app.up.railway.app)
+- **Issues**: [GitHub Issues](https://github.com/CemRoot/BarberDemo/issues)
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [ASP.NET Core Team](https://github.com/dotnet/aspnetcore)
+- [Bootstrap Team](https://getbootstrap.com)
+- [Calendly](https://calendly.com)
+- [Font Awesome](https://fontawesome.com)
+
+---
+
+⭐ **If you like this project, don't forget to give it a star!**
