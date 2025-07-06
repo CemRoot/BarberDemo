@@ -13,7 +13,26 @@ builder.Services.AddDbContext<AppDb>(opt => opt.UseInMemoryDatabase("BarberDemo"
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddHostedService<ReminderService>();
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+// Configure static files and default files (order matters!)
+app.UseDefaultFiles(); // Must be before UseStaticFiles
+app.UseStaticFiles();
+
+// Use CORS
+app.UseCors();
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -32,6 +51,48 @@ using (var scope = app.Services.CreateScope())
 }
 
 // ── Endpoints ──────────────────────────────────────────────────────────
+
+// API endpoints for the web application
+app.MapGet("/api/status", () => Results.Ok(new { status = "OK", timestamp = DateTime.UtcNow }))
+    .WithTags("Status");
+
+// Get available appointment slots for a specific date
+app.MapGet("/api/appointments/available", async (DateTime date, AppDb db) =>
+{
+    var dayOfWeek = date.DayOfWeek;
+    
+    // Check if it's a working day
+    var workingHours = await db.WorkingHours
+        .Where(wh => wh.Day == dayOfWeek)
+        .ToListAsync();
+    
+    if (!workingHours.Any())
+    {
+        return Results.Ok(new { available = false, slots = new List<string>() });
+    }
+    
+    // Get existing appointments for this date
+    var existingAppointments = await db.Appointments
+        .Where(a => a.Date.Date == date.Date)
+        .Select(a => a.Date.TimeOfDay)
+        .ToListAsync();
+    
+    // Generate available slots
+    var availableSlots = new List<string>();
+    foreach (var workingHour in workingHours)
+    {
+        for (var time = workingHour.Start; time < workingHour.End; time = time.Add(TimeSpan.FromHours(1)))
+        {
+            if (!existingAppointments.Contains(time))
+            {
+                availableSlots.Add(time.ToString(@"hh\:mm"));
+            }
+        }
+    }
+    
+    return Results.Ok(new { available = true, slots = availableSlots });
+})
+.WithTags("Appointments");
 
 // 1) Add working hours
 app.MapPost("/api/hours", async (WorkingHourDto dto, AppDb db) =>
@@ -55,7 +116,8 @@ app.MapPost("/api/hours", async (WorkingHourDto dto, AppDb db) =>
     db.WorkingHours.Add(hour);
     await db.SaveChangesAsync();
     return Results.Created($"/api/hours/{hour.Id}", hour);
-});
+})
+.WithTags("Working Hours");
 
 // 2) Book an appointment
 app.MapPost("/api/appointments",
@@ -95,7 +157,8 @@ app.MapPost("/api/appointments",
                          $"Dear {appt.Customer}, your appointment is on {appt.Date:u}.");
 
     return Results.Ok(appt);
-});
+})
+.WithTags("Appointments");
 
 app.Run();
 

@@ -1,278 +1,135 @@
-# BarberDemo – Minimal .NET 8 API (working hours, bookings, e-mail reminders)
+# 🔥 Berber Demo - Modern Randevu Sistemi
 
-## 🚀 Run in GitHub Codespaces (Recommended for Demos)
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-**Zero setup required!** Perfect for live presentations:
+Modern, responsive ve kullanıcı dostu berber randevu sistemi. ASP.NET Core 8 ile geliştirilmiş, Calendly entegrasyonu ile güçlendirilmiş profesyonel web uygulaması.
 
-1. Click **Code** → **Codespaces** → **Create codespace**
-2. Wait for automatic setup (2-3 minutes)
-3. Run: `dotnet run`
-4. Access Swagger UI at the forwarded port
+## ✨ Özellikler
 
-**✅ No .NET installation needed • ✅ Cloud-based • ✅ Perfect for demos**
+### 🎯 **Randevu Sistemleri**
+- **Calendly Entegrasyonu**: Profesyonel randevu yönetimi
+- **Hızlı Randevu Formu**: Anlık randevu alma
+- **Çifte Seçenek**: Hem Calendly hem de kendi formumuz
+- **Responsive Tasarım**: Tüm cihazlarda mükemmel görünüm
 
----
+### 🏪 **Berber Özellikleri**
+- **Hizmet Paketleri**: Saç kesimi, sakal düzenleme, saç bakımı
+- **Çalışma Saatleri**: Otomatik saat kontrolü
+- **Fiyat Listesi**: Şeffaf fiyatlandırma
+- **İletişim Bilgileri**: Kolay erişim
 
-## 🇹🇷 TÜRKÇE KULLANIM KILAVUZU
+### 🔧 **Teknik Özellikler**
+- **ASP.NET Core 8**: Modern web framework
+- **Entity Framework Core**: In-memory database
+- **Bootstrap 5**: Responsive UI framework
+- **Font Awesome**: İkon kütüphanesi
+- **Calendly API**: Profesyonel randevu sistemi
 
-### 🎯 Proje Hakkında
+## 🚀 Canlı Demo
 
-**BarberDemo**, berber randevu sistemi için hazırlanmış minimal bir .NET 8 API'sidir. Bu proje şu özellikleri içerir:
+- **Demo Site**: [Buradan erişin](https://your-railway-app.up.railway.app)
+- **Calendly**: [Randevu al](https://calendly.com/isgelistirme41/30min)
+- **API Docs**: [Swagger UI](https://your-railway-app.up.railway.app/swagger)
 
-- 🕒 **Çalışma saatleri yönetimi** (çakışma kontrolü ile)
-- 📅 **Randevu sistemi** (zaman çakışma kontrolü)
-- ✉️ **Otomatik e-posta bildirimleri** (berber ve müşteri)
-- ⏰ **24 saat öncesi hatırlatma servisi** (arka plan görevi)
-- 💾 **Bellek içi veritabanı** (kurulum gerektirmez)
-- 📖 **Swagger UI** (test arayüzü)
+## 📦 Hızlı Başlangıç
 
-### 🚀 Hızlı Başlangıç (Önerilen - GitHub Codespaces)
-
-**HİÇBİR KURULUM GEREKMİYOR!** Sadece tarayıcınız olması yeterli:
-
-#### Adım 1: GitHub Codespaces'te Aç
-1. Bu GitHub deposuna gidin
-2. **Code** butonuna tıklayın
-3. **Codespaces** sekmesini seçin
-4. **Create codespace** butonuna tıklayın
-
-#### Adım 2: Otomatik Kurulumu Bekleyin
-- 2-3 dakika bekleyin (otomatik .NET 8 kurulumu)
-- VS Code tarayıcıda açılacak
-- Tüm paketler otomatik yüklenecek
-
-#### Adım 3: Uygulamayı Başlatın
-Terminal'de şu komutu çalıştırın:
-```bash
-./start-demo.sh
-```
-veya
-```bash
-dotnet run
-```
-
-#### Adım 4: Swagger UI'yı Kullanın
-- Port yönlendirmesi otomatik açılacak
-- Swagger arayüzü tarayıcıda görünecek
-- API'yi test etmeye başlayabilirsiniz!
-
-### 💻 Yerel Bilgisayarınızda Çalıştırma
-
-#### Gereksinimler
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+### Gereksinimler
+- .NET 8.0 SDK
 - Git
 
-#### Kurulum Adımları
-
-1. **Projeyi indirin:**
+### Kurulum
 ```bash
-git clone https://github.com/[KULLANICI_ADI]/BarberDemo.git
+git clone https://github.com/KULLANICI_ADINIZ/BarberDemo.git
 cd BarberDemo
-```
-
-2. **Paketleri yükleyin:**
-```bash
 dotnet restore
-```
-
-3. **Uygulamayı çalıştırın:**
-```bash
 dotnet run
 ```
 
-4. **Swagger UI'yı açın:**
-- Tarayıcınızda: `http://localhost:5000/swagger`
+Tarayıcınızda `http://localhost:5000` adresine gidin.
 
-### 📝 API Kullanımı
+## 🌐 Deploy Seçenekleri
 
-#### 1. Çalışma Saatleri Ekleme
-**Endpoint:** `POST /api/hours`
+### 1. Railway (Önerilen)
+1. [Railway.app](https://railway.app) hesabı oluşturun
+2. GitHub repo'nuzu bağlayın
+3. Otomatik deploy başlar
 
-**Örnek istek:**
-```json
-{
-  "day": "Monday",
-  "start": "10:00:00",
-  "end": "18:00:00"
+### 2. Render
+1. [Render.com](https://render.com) hesabı oluşturun
+2. GitHub repo'nuzu bağlayın
+3. Web service olarak deploy edin
+
+### 3. Azure
+1. Azure App Service oluşturun
+2. GitHub Actions ile deploy edin
+
+## 📁 Proje Yapısı
+
+```
+BarberDemo/
+├── wwwroot/                 # Static files
+│   ├── css/style.css       # Custom CSS
+│   ├── js/app.js           # JavaScript
+│   └── index.html          # Ana sayfa
+├── Program.cs              # Ana uygulama
+├── appsettings.json        # Konfigürasyon
+├── Dockerfile              # Docker build
+├── railway.json            # Railway config
+└── README.md              # Bu dosya
+```
+
+## 🛠️ Geliştirme
+
+### API Endpoints
+- `GET /` - Ana sayfa
+- `GET /api/status` - Sistem durumu
+- `POST /api/appointments` - Randevu oluşturma
+- `POST /api/hours` - Çalışma saatleri
+- `GET /swagger` - API dokümantasyonu
+
+### Özellik Ekleme
+1. Fork edin
+2. Feature branch oluşturun
+3. Değişiklikleri commit edin
+4. Pull request gönderin
+
+## 🎨 Customization
+
+### Renk Teması
+`wwwroot/css/style.css` dosyasında CSS variables:
+```css
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
 }
 ```
 
-**Açıklama:** Berberin hangi günlerde ve saatlerde çalıştığını tanımlar.
-
-#### 2. Randevu Alma
-**Endpoint:** `POST /api/appointments`
-
-**Örnek istek:**
-```json
-{
-  "customer": "Ahmet Yılmaz",
-  "email": "ahmet@example.com",
-  "date": "2025-01-20T14:00:00Z"
-}
+### Calendly Linki
+`wwwroot/js/app.js` dosyasında URL'yi güncelleyin:
+```javascript
+url: 'https://calendly.com/YOUR-LINK/30min'
 ```
 
-**Açıklama:** Müşteri için randevu oluşturur ve e-posta bildirimi gönderir.
+## 📞 İletişim
 
-### 📧 E-posta Ayarları
+- **Geliştirici**: [GitHub Profile](https://github.com/KULLANICI_ADINIZ)
+- **Demo**: [Canlı Site](https://your-railway-app.up.railway.app)
+- **Issues**: [GitHub Issues](https://github.com/KULLANICI_ADINIZ/BarberDemo/issues)
 
-#### Konsol Modu (Varsayılan)
-- E-posta bildirimleri terminal'de görünür
-- Demo ve geliştirme için idealdir
-- Ek kurulum gerektirmez
+## 📄 Lisans
 
-#### SMTP Modu (Gerçek E-posta)
-`appsettings.json` dosyasında:
-```json
-{
-  "Mail": {
-    "Mode": "smtp",
-    "Smtp": {
-      "Host": "smtp.gmail.com",
-      "Port": 587,
-      "User": "sizin@email.com",
-      "Pass": "sifreniz",
-      "From": "barber@orneksite.com"
-    }
-  }
-}
-```
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-**Çevre değişkenleri ile:**
-```bash
-export SMTP_USER="sizin@email.com"
-export SMTP_PASS="sifreniz"
-```
+## 🙏 Teşekkürler
 
-### ⏰ Arka Plan Servisleri
-
-**Hatırlatma Servisi:**
-- Her dakika çalışır
-- 24 saat öncesinde hatırlatma gönderir
-- Otomatik olarak başlar
-- Console'da log mesajları görünür
-
-### 🛠️ Geliştirme İpuçları
-
-#### Veritabanı
-- Bellek içi SQLite kullanır
-- Uygulama her başlatıldığında sıfırlanır
-- Örnek veri otomatik yüklenir (Pazartesi-Salı, 10:00-18:00)
-
-#### Hata Ayıklama
-```bash
-# Detaylı loglar için
-export ASPNETCORE_ENVIRONMENT=Development
-dotnet run
-```
-
-#### Testler Ekleme
-```bash
-# Test projesi oluşturma
-dotnet new xunit -n BarberDemo.Tests
-cd BarberDemo.Tests
-dotnet add reference ../BarberDemo.csproj
-```
-
-### 🎬 Demo Senaryosu (15 dakika)
-
-1. **Giriş (2 dk):**
-   - Proje tanıtımı
-   - GitHub Codespaces açılımı
-
-2. **Çalışma Saatleri (3 dk):**
-   - Swagger UI'da POST /api/hours
-   - Çakışma durumu gösterimi
-   - Geçersiz saat aralığı testi
-
-3. **Randevu Sistemi (5 dk):**
-   - POST /api/appointments ile randevu alma
-   - E-posta bildirimlerini console'da gösterme
-   - Çakışan randevu testi
-   - Çalışma saatleri dışı randevu testi
-
-4. **Arka Plan Servisi (3 dk):**
-   - Hatırlatma sisteminin açıklanması
-   - Console loglarında servis çalışmasını gösterme
-
-5. **Kapanış (2 dk):**
-   - Özet ve sorular
-
-### 🚀 Deployment Seçenekleri
-
-#### GitHub Actions (Otomatik)
-- `.github/workflows/dotnet.yml` mevcut
-- Her push'ta otomatik build ve test
-
-#### Azure'a Deploy
-```bash
-# Azure CLI ile
-az containerapp up --source . --resource-group myRG --environment myEnv
-```
-
-#### Docker
-```bash
-# Dockerfile oluşturmak için
-dotnet publish -c Release
-docker build -t barberdemo .
-docker run -p 5000:5000 barberdemo
-```
-
-### ❓ Sık Sorulan Sorular
-
-**S: .NET 8 yüklü değil, ne yapmalıyım?**
-C: GitHub Codespaces kullanın! Hiçbir kurulum gerektirmez.
-
-**S: E-postalar gönderilmiyor?**
-C: Konsol modunda çalışıyor. Terminal'de log mesajlarını kontrol edin.
-
-**S: Randevu alınamıyor?**
-C: Önce çalışma saatleri tanımladığınızdan emin olun.
-
-**S: Veritabanı verilerimi nasıl koruyabilirim?**
-C: Bu demo sürümü için in-memory kullanılıyor. Production için SQL Server eklenebilir.
-
-### 📞 Destek
-
-- GitHub Issues: Sorunları bildirin
-- Email: [iletişim@orneksite.com]
-- Wiki: Detaylı dokümantasyon
+- [ASP.NET Core Team](https://github.com/dotnet/aspnetcore)
+- [Bootstrap Team](https://getbootstrap.com)
+- [Calendly](https://calendly.com)
+- [Font Awesome](https://fontawesome.com)
 
 ---
 
-## 💻 Local Development (English)
-
-```bash
-dotnet restore
-dotnet run
-# Swagger UI → http://localhost:5000/swagger
-```
-
-## 📝 API Endpoints
-
-| Verb | Path | Body example (JSON) | Purpose |
-|------|------|---------------------|---------|
-| POST | `/api/hours` | `{ "day":"Monday","start":"10:00:00","end":"18:00:00" }` | Add working hours |
-| POST | `/api/appointments` | `{ "customer":"John","email":"john@x.com","date":"2025-07-09T14:00:00Z" }` | Book an appointment |
-
-## 📧 Email Configuration
-
-- **Console mode** (default) — emails appear as log lines in terminal
-- **SMTP mode** — set `Mail:Mode=smtp` and provide `SMTP_USER`, `SMTP_PASS` environment variables
-
-## ⏰ Background Reminder Service
-
-A background service runs every minute and sends reminder emails 24 hours before appointments.
-
-## 🎯 Demo Features
-
-- ✅ **Working hours management** with overlap validation
-- ✅ **Appointment booking** with clash detection  
-- ✅ **Immediate email notifications** (barber + customer)
-- ✅ **24-hour reminder system** (background service)
-- ✅ **In-memory database** (zero external dependencies)
-- ✅ **Swagger UI** as demo frontend
-- ✅ **Pre-seeded data** (Monday-Tuesday, 10 AM - 6 PM)
-
----
-
-Built for live demos – **zero external infrastructure required**!
+⭐ **Beğendiyseniz yıldız vermeyi unutmayın!**
