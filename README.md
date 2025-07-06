@@ -3,6 +3,9 @@
 ![.NET](https://img.shields.io/badge/.NET-8.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Live Demo](https://img.shields.io/badge/demo-live-success)
+
+**🚀 [Canlı Demo](https://barber-f934.onrender.com) | 📅 [Calendly](https://calendly.com/isgelistirme41/30min) | 🔧 [API Docs](https://barber-f934.onrender.com/swagger)**
 
 ## 🌐 Language / Dil Seçimi
 
@@ -37,9 +40,9 @@ Modern, responsive ve kullanıcı dostu berber randevu sistemi. ASP.NET Core 8 i
 
 ## 🚀 Canlı Demo
 
-- **Demo Site**: [Buradan erişin](https://your-railway-app.up.railway.app)
+- **Demo Site**: [https://barber-f934.onrender.com](https://barber-f934.onrender.com)
 - **Calendly**: [Randevu al](https://calendly.com/isgelistirme41/30min)
-- **API Docs**: [Swagger UI](https://your-railway-app.up.railway.app/swagger)
+- **API Docs**: [Swagger UI](https://barber-f934.onrender.com/swagger)
 
 ## 📦 Hızlı Başlangıç
 
@@ -123,9 +126,9 @@ url: 'https://calendly.com/YOUR-LINK/30min'
 
 ## 📞 İletişim
 
-- **Geliştirici**: [GitHub Profile](https://github.com/KULLANICI_ADINIZ)
-- **Demo**: [Canlı Site](https://your-railway-app.up.railway.app)
-- **Issues**: [GitHub Issues](https://github.com/KULLANICI_ADINIZ/BarberDemo/issues)
+- **Geliştirici**: [GitHub Profile](https://github.com/CemRoot)
+- **Demo**: [Canlı Site](https://barber-f934.onrender.com)
+- **Issues**: [GitHub Issues](https://github.com/CemRoot/BarberDemo/issues)
 
 ## 📄 Lisans
 
@@ -171,9 +174,9 @@ Modern, responsive and user-friendly barber appointment system. Professional web
 
 ## 🚀 Live Demo
 
-- **Demo Site**: [Access here](https://your-railway-app.up.railway.app)
+- **Demo Site**: [https://barber-f934.onrender.com](https://barber-f934.onrender.com)
 - **Calendly**: [Book appointment](https://calendly.com/isgelistirme41/30min)
-- **API Docs**: [Swagger UI](https://your-railway-app.up.railway.app/swagger)
+- **API Docs**: [Swagger UI](https://barber-f934.onrender.com/swagger)
 
 ## 📦 Quick Start
 
@@ -258,7 +261,7 @@ url: 'https://calendly.com/YOUR-LINK/30min'
 ## 📞 Contact
 
 - **Developer**: [GitHub Profile](https://github.com/CemRoot)
-- **Demo**: [Live Site](https://your-railway-app.up.railway.app)
+- **Demo**: [Live Site](https://barber-f934.onrender.com)
 - **Issues**: [GitHub Issues](https://github.com/CemRoot/BarberDemo/issues)
 
 ## 📄 License
