@@ -188,6 +188,19 @@ body {
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-icon {
+    font-size: 1.8rem;
+    animation: rotate 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
 }
 
 .navbar-nav .nav-link {
