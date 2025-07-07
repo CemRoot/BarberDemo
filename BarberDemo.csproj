@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <!-- Swagger UI -->
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
     <!-- SMTP / console e-mail -->
     <PackageReference Include="MailKit" Version="4.2.0" />
     <!-- In-memory EF Core database -->
