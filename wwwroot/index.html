@@ -3,43 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berber Demo - Randevu Sistemi</title>
-    
+    <title>Elite Barber - Premium Berber Salonu | Lüks Saç & Sakal Bakımı</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23e74c3c' rx='6'/><text x='16' y='24' font-size='18' text-anchor='middle' fill='white'>✂️</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23d4af37' rx='6'/><text x='16' y='24' font-size='18' text-anchor='middle' fill='%231a1a1a'>✂️</text></svg>">
     <link rel="shortcut icon" href="/favicon.svg">
-    
+
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'><rect width='180' height='180' fill='%23e74c3c' rx='30'/><text x='90' y='130' font-size='100' text-anchor='middle' fill='white'>✂️</text></svg>">
-    
-    <!-- Meta tags -->
-    <meta name="description" content="Modern berber randevu sistemi. Calendly entegrasyonu ile kolay randevu alma.">
-    <meta name="keywords" content="berber, randevu, saç kesimi, sakal, Calendly">
-    <meta name="theme-color" content="#e74c3c">
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'><rect width='180' height='180' fill='%23d4af37' rx='30'/><text x='90' y='130' font-size='100' text-anchor='middle' fill='%231a1a1a'>✂️</text></svg>">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Elite Barber - İstanbul'un en prestijli berber salonu. Premium saç kesimi, profesyonel sakal bakımı ve lüks grooming hizmetleri. Calendly ile kolay randevu.">
+    <meta name="keywords" content="elite barber, premium berber, lüks berber, saç kesimi istanbul, sakal bakımı, grooming, barbershop, calendly randevu">
+    <meta name="author" content="Elite Barber">
+    <meta name="theme-color" content="#d4af37">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elite Barber - Premium Berber Salonu">
+    <meta property="og:description" content="Lüks saç kesimi ve sakal bakımı hizmetleri. Uzman ekibimizle randevunuzu hemen alın.">
+    <meta property="og:image" content="/favicon.svg">
+
+    <!-- Google Fonts - Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Raleway:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+
     <!-- Calendly CSS -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="brand-icon">✂️</span> Berber Demo
+            <a class="navbar-brand" href="#home">
+                <span class="brand-icon">✂️</span> Elite Barber
             </a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home">Ana Sayfa</a>
-                <a class="nav-link" href="#services">Hizmetler</a>
-                <a class="nav-link" href="#appointment">Randevu</a>
-                <a class="nav-link" href="#hours">Saatler</a>
-                <a class="nav-link" href="#contact">İletişim</a>
-                <button class="btn btn-outline-light btn-sm ms-2" id="navCalendlyBtn">
-                    <i class="fas fa-calendar"></i> Calendly
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto align-items-center">
+                    <a class="nav-link" href="#home">Ana Sayfa</a>
+                    <a class="nav-link" href="#services">Hizmetler</a>
+                    <a class="nav-link" href="#team">Ekibimiz</a>
+                    <a class="nav-link" href="#gallery">Galeri</a>
+                    <a class="nav-link" href="#testimonials">Yorumlar</a>
+                    <a class="nav-link" href="#appointment">Randevu</a>
+                    <a class="nav-link" href="#contact">İletişim</a>
+                    <button class="btn btn-outline-light btn-sm ms-2" id="navCalendlyBtn">
+                        <i class="fas fa-calendar"></i> Hızlı Randevu
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -48,15 +73,20 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-4 text-white mb-4">Profesyonel Berber Hizmetleri</h1>
-                    <p class="lead text-white mb-4">Modern tarzda saç kesimi ve bakım hizmetleri. Uzman berberlerimizle randevunuzu hemen alın!</p>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 text-white mb-4">
+                        Tarzınızı <span class="highlight">Lükse</span> Dönüştürün
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Elite Barber'da sadece saç kesmiyoruz, stil yaratıyoruz.
+                        Uzman berberlerimiz ve premium hizmetlerimizle kendinize en iyi yatırımı yapın.
+                    </p>
                     <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
                         <a href="#appointment" class="btn btn-primary btn-lg">
-                            <i class="fas fa-calendar-plus"></i> Hızlı Randevu
+                            <i class="fas fa-calendar-plus"></i> Randevu Al
                         </a>
                         <button id="calendlyBtn" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-calendar-alt"></i> Calendly ile Randevu
+                            <i class="fas fa-calendar-alt"></i> Calendly
                         </button>
                     </div>
                 </div>
@@ -70,38 +100,205 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services">
         <div class="container">
-            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="service-card h-100">
+            <div class="section-title">
+                <h2>Premium Hizmetlerimiz</h2>
+                <p class="text-muted">Uzman ekibimiz tarafından sunulan profesyonel bakım hizmetleri</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-cut"></i>
                         </div>
-                        <h4>Saç Kesimi</h4>
-                        <p>Modern ve klasik saç kesimi hizmetleri</p>
-                        <div class="price">₺50</div>
+                        <h4>Signature Kesim</h4>
+                        <p>Modern ve klasik tarzlarda profesyonel saç kesimi. Yüz şeklinize özel stil danışmanlığı.</p>
+                        <div class="price">₺150</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="service-card h-100">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-user-tie"></i>
                         </div>
-                        <h4>Sakal Düzenleme</h4>
-                        <p>Profesyonel sakal tıraşı ve şekillendirme</p>
-                        <div class="price">₺30</div>
+                        <h4>Royal Traş</h4>
+                        <p>Sıcak havlu, premium köpük ve geleneksel ustura ile lüks tıraş deneyimi.</p>
+                        <div class="price">₺100</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="service-card h-100">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-spa"></i>
                         </div>
-                        <h4>Saç Bakımı</h4>
-                        <p>Saç maskesi ve bakım ürünleri</p>
-                        <div class="price">₺40</div>
+                        <h4>Premium Bakım</h4>
+                        <p>Profesyonel saç maskesi, yağ bakımı ve özel serum uygulamaları.</p>
+                        <div class="price">₺200</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>VIP Paket</h4>
+                        <p>Saç kesimi, sakal düzenleme, yüz bakımı ve masaj. Tam lüks deneyim.</p>
+                        <div class="price">₺350</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Uzman Ekibimiz</h2>
+                <p class="text-muted">Sektörün en deneyimli ve yetenekli berberleri</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member">
+                        <div class="team-avatar">
+                            <span>👨‍🦱</span>
+                        </div>
+                        <h4>Mehmet Yılmaz</h4>
+                        <p class="title">Baş Berber</p>
+                        <p>15 yıllık deneyim. Klasik ve modern kesim ustası. Uluslararası sertifikalı.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member">
+                        <div class="team-avatar">
+                            <span>👨</span>
+                        </div>
+                        <h4>Ali Demir</h4>
+                        <p class="title">Sakal Uzmanı</p>
+                        <p>10 yıllık deneyim. Geleneksel ustura tıraş ve sakal şekillendirme.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member">
+                        <div class="team-avatar">
+                            <span>👨‍🦰</span>
+                        </div>
+                        <h4>Can Öztürk</h4>
+                        <p class="title">Stil Danışmanı</p>
+                        <p>8 yıllık deneyim. Modern trendler ve kişiye özel stil önerileri.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member">
+                        <div class="team-avatar">
+                            <span>👨‍🦲</span>
+                        </div>
+                        <h4>Emre Kaya</h4>
+                        <p class="title">Bakım Uzmanı</p>
+                        <p>12 yıllık deneyim. Saç ve cilt bakımı, profesyonel ürün danışmanlığı.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Çalışmalarımız</h2>
+                <p class="text-muted">Müşterilerimizin dönüşümünden gurur duyuyoruz</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-label="Klasik Fade">
+                    <div class="gallery-placeholder">✂️</div>
+                </div>
+                <div class="gallery-item" data-label="Pompadour Stil">
+                    <div class="gallery-placeholder">💈</div>
+                </div>
+                <div class="gallery-item" data-label="Modern Kesim">
+                    <div class="gallery-placeholder">✨</div>
+                </div>
+                <div class="gallery-item" data-label="Sakal Tasarım">
+                    <div class="gallery-placeholder">🧔</div>
+                </div>
+                <div class="gallery-item" data-label="Undercut">
+                    <div class="gallery-placeholder">⭐</div>
+                </div>
+                <div class="gallery-item" data-label="Vintage Tarz">
+                    <div class="gallery-placeholder">🎩</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Müşteri Yorumları</h2>
+                <p class="text-muted">Binlerce mutlu müşterimizin deneyimleri</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Elite Barber'ı keşfettiğimden beri başka yere gitmiyorum. Mehmet abi gerçekten işinin ustası.
+                            Her seferinde tam istediğim gibi kesim yapıyor. Atmosfer harika, hizmet kalitesi mükemmel!
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AY</div>
+                            <div class="author-info">
+                                <h5>Ahmet Yılmaz</h5>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Yıllardır berber değiştirdim ama Elite Barber farklı bir seviye. Premium hizmet, lüks ortam ve
+                            uzman ekip. Özellikle VIP paket harika, kendinizi gerçekten özel hissediyorsunuz.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">BK</div>
+                            <div class="author-info">
+                                <h5>Burak Kılıç</h5>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Sakal bakımı konusunda çok titizimdir. Ali ustanın ustura tıraşı harika! Sıcak havlu, premium
+                            ürünler ve profesyonel işçilik. Tam bir lüks deneyim yaşıyorsunuz.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CD</div>
+                            <div class="author-info">
+                                <h5>Cem Demir</h5>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            İş toplantılarım öncesi mutlaka buraya uğrarım. Can bey'in stil danışmanlığı sayesinde her zaman
+                            şık ve bakımlı görünüyorum. Randevu sistemi çok pratik, hiç beklemiyorsunuz.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MÖ</div>
+                            <div class="author-info">
+                                <h5>Murat Özkan</h5>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,32 +306,35 @@
     </section>
 
     <!-- Appointment Section -->
-    <section id="appointment" class="py-5 bg-light">
+    <section id="appointment">
         <div class="container">
-            <h2 class="text-center mb-5">Randevu Alma Seçenekleri</h2>
-            
+            <div class="section-title">
+                <h2>Randevu Alın</h2>
+                <p class="text-muted">Size en uygun yöntemi seçin ve randevunuzu hemen oluşturun</p>
+            </div>
+
             <!-- Appointment Options -->
-            <div class="row mb-5">
-                <div class="col-md-6 mb-4">
+            <div class="row mb-5 g-4">
+                <div class="col-md-6">
                     <div class="appointment-option">
                         <div class="text-center mb-3">
-                            <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                            <i class="fas fa-calendar-alt fa-4x text-primary mb-3"></i>
                             <h4>Calendly ile Randevu</h4>
-                            <p class="text-muted">Calendly üzerinden kolayca randevunuzu alın</p>
+                            <p class="text-muted">Profesyonel randevu sistemi ile müsait saatleri görün ve anında randevu alın</p>
                         </div>
                         <div class="text-center">
                             <button id="calendlyBtnMain" class="btn btn-primary btn-lg">
-                                <i class="fas fa-calendar-alt"></i> Calendly'de Randevu Al
+                                <i class="fas fa-calendar-alt"></i> Calendly'de Aç
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6">
                     <div class="appointment-option">
                         <div class="text-center mb-3">
-                            <i class="fas fa-calendar-plus fa-3x text-success mb-3"></i>
+                            <i class="fas fa-calendar-plus fa-4x text-success mb-3"></i>
                             <h4>Hızlı Randevu Formu</h4>
-                            <p class="text-muted">Aşağıdaki formu doldurarak randevu alın</p>
+                            <p class="text-muted">Basit formu doldurun, biz sizi arayalım ve randevunuzu onaylayalım</p>
                         </div>
                         <div class="text-center">
                             <button onclick="document.getElementById('quickAppointmentForm').scrollIntoView({behavior: 'smooth'})" class="btn btn-success btn-lg">
@@ -149,8 +349,8 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="calendly-container">
-                        <h3 class="text-center mb-4">Calendly Randevu Takvimi</h3>
-                        <div class="calendly-inline-widget" 
+                        <h3 class="text-center mb-4">📅 Müsait Randevu Saatleri</h3>
+                        <div class="calendly-inline-widget"
                              data-url="https://calendly.com/isgelistirme41/30min"
                              style="min-width:320px;height:700px;">
                         </div>
@@ -161,26 +361,26 @@
             <!-- Quick Appointment Form -->
             <div id="quickAppointmentForm" class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h3 class="text-center mb-4">Hızlı Randevu Formu</h3>
+                    <h3 class="text-center mb-4">⚡ Hızlı Randevu Formu</h3>
                     <div class="appointment-form">
                         <form id="appointmentForm">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="customerName" class="form-label">Ad Soyad</label>
-                                    <input type="text" class="form-control" id="customerName" required>
+                                    <label for="customerName" class="form-label">Ad Soyad *</label>
+                                    <input type="text" class="form-control" id="customerName" placeholder="Ahmet Yılmaz" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="customerEmail" class="form-label">E-posta</label>
-                                    <input type="email" class="form-control" id="customerEmail" required>
+                                    <label for="customerEmail" class="form-label">E-posta *</label>
+                                    <input type="email" class="form-control" id="customerEmail" placeholder="ornek@email.com" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="appointmentDate" class="form-label">Tarih</label>
+                                    <label for="appointmentDate" class="form-label">Tarih *</label>
                                     <input type="date" class="form-control" id="appointmentDate" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="appointmentTime" class="form-label">Saat</label>
+                                    <label for="appointmentTime" class="form-label">Saat *</label>
                                     <select class="form-select" id="appointmentTime" required>
                                         <option value="">Saat seçin...</option>
                                         <option value="10:00">10:00</option>
@@ -195,18 +395,18 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="serviceType" class="form-label">Hizmet Türü</label>
+                                <label for="serviceType" class="form-label">Hizmet Türü *</label>
                                 <select class="form-select" id="serviceType" required>
                                     <option value="">Hizmet seçin...</option>
-                                    <option value="haircut">Saç Kesimi (₺50)</option>
-                                    <option value="beard">Sakal Düzenleme (₺30)</option>
-                                    <option value="haircare">Saç Bakımı (₺40)</option>
-                                    <option value="combo">Kombo (Saç + Sakal) (₺70)</option>
+                                    <option value="signature">Signature Kesim (₺150)</option>
+                                    <option value="royal">Royal Traş (₺100)</option>
+                                    <option value="premium">Premium Bakım (₺200)</option>
+                                    <option value="vip">VIP Paket (₺350)</option>
                                 </select>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-calendar-plus"></i> Randevu Al
+                                    <i class="fas fa-calendar-check"></i> Randevu Oluştur
                                 </button>
                             </div>
                         </form>
@@ -217,39 +417,42 @@
     </section>
 
     <!-- Working Hours Section -->
-    <section id="hours" class="py-5">
+    <section id="hours">
         <div class="container">
-            <h2 class="text-center mb-5">Çalışma Saatleri</h2>
+            <div class="section-title">
+                <h2>Çalışma Saatleri</h2>
+                <p class="text-muted">Haftanın her günü sizin için buradayız</p>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="working-hours">
                         <div class="hours-item">
                             <span class="day">Pazartesi</span>
-                            <span class="time">10:00 - 18:00</span>
+                            <span class="time">10:00 - 20:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Salı</span>
-                            <span class="time">10:00 - 18:00</span>
+                            <span class="time">10:00 - 20:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Çarşamba</span>
-                            <span class="time">Kapalı</span>
+                            <span class="time">10:00 - 20:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Perşembe</span>
-                            <span class="time">Kapalı</span>
+                            <span class="time">10:00 - 20:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Cuma</span>
-                            <span class="time">Kapalı</span>
+                            <span class="time">10:00 - 22:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Cumartesi</span>
-                            <span class="time">Kapalı</span>
+                            <span class="time">09:00 - 22:00</span>
                         </div>
                         <div class="hours-item">
                             <span class="day">Pazar</span>
-                            <span class="time">Kapalı</span>
+                            <span class="time">11:00 - 18:00</span>
                         </div>
                     </div>
                 </div>
@@ -258,33 +461,48 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-dark text-white">
+    <section id="contact" class="text-white">
         <div class="container">
-            <h2 class="text-center mb-5">İletişim</h2>
-            <div class="row">
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+            <div class="section-title">
+                <h2>İletişim</h2>
+                <p class="text-muted">Bize ulaşın, size yardımcı olmaktan mutluluk duyarız</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
                     <h5>Adres</h5>
-                    <p>Örnek Mahallesi, Berber Sokak No:123<br>İstanbul, Türkiye</p>
+                    <p>Nişantaşı, Teşvikiye Caddesi No:45<br>Şişli / İstanbul</p>
                 </div>
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-phone fa-2x mb-3"></i>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-phone fa-3x mb-3"></i>
                     <h5>Telefon</h5>
-                    <p>+90 212 555 0123</p>
+                    <p>+90 212 555 0 ELITE<br>+90 555 123 45 67</p>
                 </div>
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-envelope fa-2x mb-3"></i>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-envelope fa-3x mb-3"></i>
                     <h5>E-posta</h5>
-                    <p>info@barberdemo.com</p>
+                    <p>info@elitebarber.com<br>randevu@elitebarber.com</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h5 class="mb-3">Sosyal Medya</h5>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#" class="text-white fs-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-2"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-4">
         <div class="container">
-            <p>&copy; 2025 Berber Demo. Tüm hakları saklıdır.</p>
+            <p class="mb-2">&copy; 2025 Elite Barber. Tüm hakları saklıdır.</p>
+            <p class="small text-muted">Lüks berberlik deneyiminin adresi | Premium grooming services</p>
         </div>
     </footer>
 
@@ -293,14 +511,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title"><i class="fas fa-check-circle"></i> Başarılı</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"><i class="fas fa-check-circle"></i> Randevu Başarıyla Oluşturuldu!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Randevunuz başarıyla kaydedildi! E-posta adresinize onay mesajı gönderildi.</p>
+                    <p class="mb-0">Randevunuz başarıyla kaydedildi! E-posta adresinize detaylı bilgi ve onay mesajı gönderildi.
+                    Kısa süre içinde sizi arayarak randevunuzu teyit edeceğiz.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Tamam</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Harika!</button>
                 </div>
             </div>
         </div>
@@ -310,19 +529,21 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Hata</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Bir Hata Oluştu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p id="errorMessage">Randevu kaydedilirken bir hata oluştu. Lütfen tekrar deneyin.</p>
+                    <p id="errorMessage">Randevu oluşturulurken bir sorun oluştu. Lütfen bilgilerinizi kontrol edip tekrar deneyin
+                    veya bizi telefonla arayın.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tamam</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Anladım</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Calendly JS -->
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
